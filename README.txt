@@ -1,6 +1,7 @@
 = oclc_classify
 
 http://www.libcode.net/
+https://github.com/mark-cooper/oclc_classify
 
 == DESCRIPTION:
 
@@ -14,14 +15,18 @@ Very much a work in progress ...
 
 oclc = OCLC::Classify.new 'oclc', '610837844'
 result = oclc.classify
+
 p result.author
 p result.title
+
 r = result.recommendations 'ddc', :popular
 s = result.recommendations 'ddc', :recent
 t = result.recommendations 'ddc', :latest
 p r
+
 p s
 p t
+
 r.each {|k,v| puts k['nsfa'] }
 
 == REQUIREMENTS:
