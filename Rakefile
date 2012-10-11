@@ -4,7 +4,7 @@ require 'rake/testtask'
 
 desc "Validate the gemspec"
 task :gemspec do
-  	gemspec.validate
+	gemspec.validate
 end
 
 desc "Build gem locally"
@@ -16,7 +16,7 @@ end
 
 desc "Install gem locally"
 task :install => :build do
-  	system "gem install pkg/#{gemspec.name}-#{gemspec.version}"
+	system "gem install pkg/#{gemspec.name}-#{gemspec.version}"
 end
 
 Rake::TestTask.new do |t|
