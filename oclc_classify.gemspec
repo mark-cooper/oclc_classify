@@ -13,7 +13,6 @@ Gem::Specification.new do |s|
   
   s.summary = "Retrieve dewey decimal numbers from OCLC's classify service"
   s.description = "#{s.summary}"
-  s.cert_chain = nil
   s.has_rdoc = true
 
   # files
